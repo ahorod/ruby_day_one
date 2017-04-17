@@ -1,0 +1,56 @@
+h1 {
+  font-size: 50px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.content, .col-md-9, .col-md-3, .container-fluid {
+  height: 100%;
+}
+
+#header {
+  background-color: #F4DEB5;
+  text-align: center;
+  padding-bottom: 45px;
+  padding-top: 30px;
+}
+
+#content-top {
+  background-color: #E6E6E6;
+  height: 50px;
+}
+
+#content-main {
+  background-color: #E6E6E6;
+}
+
+.form-control, #form form p {
+  display: inline-block;
+}
+
+#numInput {
+  width: 300px;
+}
+
+#content-left {
+  background-color: #90BB90;
+}
+
+#content-left h3 {
+  color: #F4DEB5;
+}
+
+#content-left p {
+  color: white;
+  font-size: 16px;
+}
+
+#username {
+  color: #5388AE;
+}
+
+#output {
+  clear: both;
+}
