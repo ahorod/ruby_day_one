@@ -83,6 +83,9 @@ class String
     hours_degree = (30.*(hours)) + (0.5.*(minutes))
     minutes_degree = minutes.*(6)
     angle = hours_degree.-(minutes_degree)
-    angle.abs()
+    if angle > 180
+      angle = angle.-(360).abs()
+    end
+    angle
   end
 end

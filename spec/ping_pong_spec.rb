@@ -78,7 +78,7 @@ describe('String#clock_degrees') do
     expect("12:00".clock_degrees()).to eq(0)
   end
   it('find smaller angle to find') do
-    expect("12:05".clock_degrees()).to eq(32.5)
+    expect("12:05".clock_degrees()).to eq(27.5)
   end
   it('find smaller angle to find') do
     expect("12:45".clock_degrees()).to eq(112.5)
