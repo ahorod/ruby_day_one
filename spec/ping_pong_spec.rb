@@ -64,5 +64,23 @@ describe('Array#queen_attack?') do
   it('is true if the coordinates are diagonally in line with each other') do
     expect([2,3].queen_attack?([3,2])).to(eq(true))
   end
-  
+
+end
+
+describe('String#clock_degrees') do
+  it('no smaller angle to find') do
+    expect("12:30".clock_degrees()).to eq(165)
+  end
+  it('no smaller angle to find') do
+    expect("6:00".clock_degrees()).to eq(180)
+  end
+  it('no smaller angle to find, with both hands together') do
+    expect("12:00".clock_degrees()).to eq(0)
+  end
+  it('find smaller angle to find') do
+    expect("12:05".clock_degrees()).to eq(32.5)
+  end
+  it('find smaller angle to find') do
+    expect("12:45".clock_degrees()).to eq(112.5)
+  end
 end

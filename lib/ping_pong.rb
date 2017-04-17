@@ -74,16 +74,15 @@ end
 #
 # 2-7 3-8
 # 5   5
-#
-# 0,5
-# 1,4
-#
-# 3,4
-# 4,5
-# 5,6
-#
-# 1,2
-# 0,1
-#
-# 3,2
-# 4,1
+
+class String
+  define_method(:clock_degrees) do
+    split_hours_from_minutes = self.split(":")
+    hours = split_hours_from_minutes[0].to_i()
+    minutes = split_hours_from_minutes[1].to_i()
+    hours_degree = (30.*(hours)) + (0.5.*(minutes))
+    minutes_degree = minutes.*(6)
+    angle = hours_degree.-(minutes_degree)
+    angle.abs()
+  end
+end
