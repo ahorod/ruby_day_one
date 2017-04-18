@@ -7,7 +7,12 @@ require('rb-readline')
 
 get('/') do
   erb(:pingpong)
-  params.fetch('numInput')
+end
+
+get('/results') do
+  input = params.fetch('numInput').to_i()
+  @output = input.ping_pong()
+  erb(:results)
 end
 
 # get('/pingpong') do
